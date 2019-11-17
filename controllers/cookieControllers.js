@@ -20,8 +20,8 @@ module.exports = {
     })
   },
 
-  addCookie(cookieName, cb) {
-    db.query(`INSERT INTO cookies (name) VALUES ("${cookieName}")`, (err, data) => {
+  addCookie(cookie, cb) {
+    db.query(`INSERT INTO cookies (name) VALUES ("${cookie.name}")`, (err, data) => {
       if (err) {
         console.log(err)
       }
@@ -30,7 +30,7 @@ module.exports = {
   },
 
   updateCookie(id, devoured, cb) {
-    db.query(`UPDATE cookies SET devoured = ${devoured} WHERE id = ${id}`, (err, data) => {
+    db.query(`UPDATE cookies SET devoured = "${devoured}" WHERE id = ${id}`, (err, data) => {
       if (err) {
         console.log(err)
       }
