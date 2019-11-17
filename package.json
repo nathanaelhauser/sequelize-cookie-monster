@@ -1,0 +1,28 @@
+{
+  "name": "hungry-cookie-monster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesmerizingYeti/hungry-cookie-monster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesmerizingYeti/hungry-cookie-monster/issues"
+  },
+  "homepage": "https://github.com/mesmerizingYeti/hungry-cookie-monster#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-react-views": "^0.11.0",
+    "mysql2": "^2.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
