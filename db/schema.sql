@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS cookies_db;
 CREATE DATABASE cookies_db;
 
 USE cookies_db;
-CREATE TABLE cookeis(
+CREATE TABLE cookies(
   id INT(10) AUTO_INCREMENT NOT NULL,
   name VARCHAR(255) NOT NULL,
   devoured BOOL NOT NULL DEFAULT 0,
