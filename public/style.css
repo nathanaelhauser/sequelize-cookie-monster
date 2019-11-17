@@ -1,0 +1,42 @@
+body {
+  background-image: url('https://i.pinimg.com/originals/b8/61/d1/b861d1f6fd8038e690c02d20f856a57d.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  padding: 15px;
+}
+
+table {
+  background-color: white;
+  border-radius: 15px;
+}
+
+form {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+tr.cookie {
+  cursor: pointer;
+}
+
+tr.cookie div {
+  pointer-events: none;
+  text-align: center;
+}
+
+form button {
+  width: -webkit-fill-available;
+}
+
+.col .row {
+  margin-left: auto;
+  margin-right: auto;
+}
