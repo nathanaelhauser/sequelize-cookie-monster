@@ -5,7 +5,7 @@ module.exports = props => {
   return (
     <table>
       <tr>
-        <th><h1>{props.title}</h1></th>
+        <th><h2><span><i className={props.icon}></i></span>{props.title}</h2></th>
       </tr>
       {
         props.cookies.map(cookie => {

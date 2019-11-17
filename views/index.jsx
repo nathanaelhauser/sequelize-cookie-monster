@@ -10,17 +10,17 @@ module.exports = props => {
         <div className="col s12 m10 l10 push-m1 push-l1">
           <CookieForm />
         </div>
-        <div className="row">
-          <div className="col s12 m6 l6">
-            <CookieTable cookies={
-              props.cookies.filter(cookie => !cookie.devoured)
-            } title="Baked" />
-          </div>
-          <div className="col s12 m6 l6">
-            <CookieTable cookies={
-              props.cookies.filter(cookie => cookie.devoured)
-            } title="Devoured" />
-          </div>
+      </div>
+      <div className="row">
+        <div className="col s12 m6 l6">
+          <CookieTable cookies={
+            props.cookies.filter(cookie => !cookie.devoured)
+          } title="Baked" icon="fas fa-cookie"/>
+        </div>
+        <div className="col s12 m6 l6">
+          <CookieTable cookies={
+            props.cookies.filter(cookie => cookie.devoured)
+          } title="Devoured" icon="fas fa-cookie-bite"/>
         </div>
       </div>
     </Layout>
