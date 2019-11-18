@@ -8,7 +8,7 @@ module.exports = props => {
         <label htmlFor="cookie-name">Cookie</label>
       </div>
       <div className="row">
-        <button id="cookie-btn" className="waves-effect waves-light btn">Bake</button>
+        <button id="cookie-btn" className="waves-effect waves-light btn bgc-cookie-monster">Bake</button>
       </div>
     </form>
   )

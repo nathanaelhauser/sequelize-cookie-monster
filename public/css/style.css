@@ -29,11 +29,12 @@ div.container {
   margin-top: 40px;
 }
 
-tr.cookie {
+td.cookie {
   cursor: pointer;
+  user-select: none;
 }
 
-tr.cookie div {
+td.cookie div {
   pointer-events: none;
   text-align: center;
 }
@@ -58,4 +59,12 @@ input.valid[type=text]:not(.browser-default),
 input.valid[type=number]:not(.browser-default) {
   border-bottom: 1px solid #2e439b;
   box-shadow: 0 1px 0 0 #2e439b;
+}
+
+.bgc-cookie-monster, .bgc-cookie-monster:focus {
+  background-color: #335BDF;
+}
+
+.bgc-cookie-monster:hover {
+  background-color: #2979ff;
 }
