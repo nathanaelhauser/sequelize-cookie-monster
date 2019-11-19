@@ -14,8 +14,8 @@ document.addEventListener('click', e => {
   }
 
   if (e.target.className === 'cookie') {
-    axios.put(`/cookies/${e.target.dataset.cookieid}`,
-      { devoured: parseInt(e.target.dataset.devoured) ? 0 : 1 })
+    axios.put(`/cookies/${e.target.dataset.cookieid}`, 
+      { devoured: 1 })
       .then(() => window.location.reload())
       .catch(e => console.error(e))
   }
