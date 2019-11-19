@@ -4,6 +4,7 @@ const Background = require('./Background')
 const Header = require('./Header')
 const CookieForm = require('./CookieForm')
 const CookieTable = require('./CookieTable')
+const CookieSound = require('./CookieSound')
 
 module.exports = props => {
   return (
@@ -29,6 +30,7 @@ module.exports = props => {
           </div>
         </div>
       </div>
+      <CookieSound />
     </Layout>
   )
 }

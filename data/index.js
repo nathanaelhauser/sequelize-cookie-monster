@@ -1,3 +1,3 @@
 module.exports = {
-  cookieSounds : require('./cookieSounds')
+  cookieSounds: require('./cookieSounds')
 }
