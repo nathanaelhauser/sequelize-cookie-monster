@@ -2,6 +2,7 @@ const db = require('../connection')
 
 module.exports = {
   
+  // Get all cookies from db
   getAllCookies(cb) {
     db.query('SELECT * FROM cookies', (err, cookies) => {
       if (err) {
@@ -11,6 +12,7 @@ module.exports = {
     })
   },
 
+  // Get a cookie from db
   getOneCookie(id, cb) {
     db.query(`SELECT * FROM cookies WHERE id = ${id}`, (err, cookie) => {
       if (err) {
@@ -20,6 +22,7 @@ module.exports = {
     })
   },
 
+  // Add a cookie to db
   addCookie(cookie, cb) {
     db.query(`INSERT INTO cookies (name) VALUES ("${cookie.name}")`, (err, data) => {
       if (err) {
@@ -29,6 +32,7 @@ module.exports = {
     })
   },
 
+  // Update a cookie in db
   updateCookie(id, devoured, cb) {
     db.query(`UPDATE cookies SET devoured = "${devoured}" WHERE id = ${id}`, (err, data) => {
       if (err) {
@@ -38,6 +42,7 @@ module.exports = {
     })
   },
 
+  // Delete a cookie from db
   deleteCookie(id) {
     db.query(`DELETE FROM cookies WHERE id = ${id}`, (err, data) => {
       if (err) {

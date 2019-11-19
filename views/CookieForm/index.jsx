@@ -1,5 +1,6 @@
 const React  = require('react')
 
+// Form to receive more cookies
 module.exports = props => {
   return(
     <form>

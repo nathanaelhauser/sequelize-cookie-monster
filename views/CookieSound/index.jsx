@@ -1,6 +1,7 @@
 const React = require('react')
 const { cookieSounds : cs } = require('../../data')
 
+// Audio tag to play cookie monster sound on page load
 module.exports = props => {
   return(
     <audio id="cookie-sound" src={ cs[randInt( 0, cs.length - 1 )] } 

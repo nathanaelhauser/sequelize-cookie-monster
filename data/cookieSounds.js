@@ -1,3 +1,4 @@
+// Array of sound files
 module.exports = [
   './sounds/can_me_uh_have_a_cookie.mp3',
   './sounds/cookies_yeah.mp3',

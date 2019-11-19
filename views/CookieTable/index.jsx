@@ -1,6 +1,7 @@
 const React = require('react')
 const CookieCell = require('../CookieCell')
 
+// Table for displaying cookies
 module.exports = props => {
   return (
     <table>

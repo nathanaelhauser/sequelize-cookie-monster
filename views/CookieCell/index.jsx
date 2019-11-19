@@ -1,5 +1,6 @@
 const React = require('react')
 
+// Cell in CookieTable
 module.exports = props => {
   return (
     <td className={(props.devoured === 1) ? 'devoured' : 'cookie'} 
