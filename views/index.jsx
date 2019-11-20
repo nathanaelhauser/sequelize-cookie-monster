@@ -10,7 +10,7 @@ module.exports = props => {
   return (
     <Layout>
       <Background />
-      <Header height="80px" />
+      <Header />
       <div className="container">
         {/* Form */}
         <div className="row">
