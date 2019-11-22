@@ -1,6 +1,8 @@
 const { join } = require('path')
 const express = require('express')
+
 const app = express()
+const db = require('./config')
 const PORT = process.env.PORT || 3000
 
 app.use(express.json())
@@ -13,4 +15,8 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 require('./routes')(app)
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+db.sync({ force: true })
+  .then(() => app.listen(PORT))
+  .catch(e => console.log(e))
+// app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+
