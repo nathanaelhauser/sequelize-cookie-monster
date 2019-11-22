@@ -1,4 +1,3 @@
-// const { cookies } = require('../controllers')
 const { Cookies } = require('../models')
 
 module.exports = app => {

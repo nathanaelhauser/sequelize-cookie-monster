@@ -1,4 +1,3 @@
-// const { cookies } = require('../controllers')
 const { Cookies } = require('../models')
 
 module.exports = app => {
@@ -8,7 +7,6 @@ module.exports = app => {
     Cookies.findAll()
       .then(cookies => res.json(cookies))
       .catch(e => console.log(e))
-    // cookies.getAllCookies(cookies => res.json(cookies))
   })
 
   // Get a cookie
@@ -16,7 +14,6 @@ module.exports = app => {
     Cookies.findOne({ where: { id: parseInt(req.params.id) }})
       .then(cookie => res.json(cookie))
       .catch(e => console.log(e))
-    // cookies.getOneCookie(parseInt(req.params.id), cookie => res.json(cookie))
   })
 
   // Add a cookie
@@ -24,7 +21,6 @@ module.exports = app => {
     Cookies.create(req.body)
       .then(() => res.sendStatus(200))
       .catch(e => console.log(e))
-    // cookies.addCookie(req.body, () => res.sendStatus(200))
   })
 
   // Update a cookie
@@ -33,7 +29,6 @@ module.exports = app => {
       .then(cookie => cookie.update(req.body))
       .then(() => res.sendStatus(200))
       .catch(e => console.log(e))
-    // cookies.updateCookie(parseInt(req.params.id), req.body.devoured, () => res.sendStatus(200))
   })
 
   // Delete a cookie
@@ -42,7 +37,6 @@ module.exports = app => {
       .then(cookie => cookie.destroy())
       .then(() => res.sendStatus(200))
       .catch(e => console.log(e))
-    // cookies.deleteCookie(parseInt(req.params.id), () => res.sendStatus(200))
   })
 
 }
