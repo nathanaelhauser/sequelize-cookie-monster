@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
 
-module.exports = new Sequelize(process.env.JAWSDB_URL 
-  ? process.env.JAWSDB_URL 
-  :'mysql://root:root@localhost/cookies_db')
+const SQL_URI = process.env.MYSQLCONNSTR_jawsdb || 'mysql://root:root@localhost/cookies_db';
+
+module.exports = new Sequelize(SQL_URI, { dialect: 'mysql' });
